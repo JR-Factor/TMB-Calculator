@@ -1,0 +1,104 @@
+body{
+  background: #ad5389;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.texting{
+  padding: 5px 5px;
+  border-radius: 5px;
+  background-color: #cc93d8;
+  color: white;
+}
+.main-container{
+  text-align: center;
+  min-width:100vh;
+  display: inline-block;
+  float: none;
+}
+.heading{
+  margin-top: -17px;
+  margin-bottom: 15px;
+  color:#f0def2;
+  font-size: 1.5em;
+  font-style: normal;
+}
+.heading h1{
+  font-weight: 100;
+  border: 5px solid #f0def2;
+  padding: 0px 10px 0px 5px;
+  border-radius: 10px;
+}
+.calculator{
+  border-radius: 5px;
+  background-color: white;
+  padding: 3px 3px;
+  font-size: 1.1em;
+}
+.carding{
+  box-shadow: 1px 2px 4px;
+}
+.pacifico{
+  font-family: 'Pacifico', cursive;
+}
+.lato{
+  font-family: 'Lato', sans-serif;
+}
+.alert{
+  color: #672f8b;
+}
+.threeD{
+  text-shadow: 1px 3px 0px ,1px 13px 5px rgb(171, 168, 168);
+}
+.inputs{
+  border: 2px solid #bf4a94;
+  border-radius: 3px;
+  padding: 1px 1px;
+  width: 50px;
+}
+.select{
+  border: 2px solid #bf4a94;
+  border-radius: 3px;
+  padding: 1px 1px;
+}
+
+.btn{
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 10px;
+  background-color: #bf4a94;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+.btn:hover{
+  background-color: #672f8b;
+}
+.height{
+  margin-right: 75px
+}
+.age{
+  margin-right: 90px;
+}
+.act{
+  margin-right: 30px;
+}
+.heading-animation{
+    animation-delay: 0.7s;
+}
+.texting-animation{
+  animation-delay: 1.5s;
+}
+.developer{
+  color: #f0def2;
+  display: inline;
+}
+.developer p{
+  border: 2px solid #f0def2;
+  border-radius: 4px;
+  padding: 5px 3px;
+  margin-right: 0%;
+}
+.developer a{
+  color: #cc93d8;
+  text-decoration: none;
+}

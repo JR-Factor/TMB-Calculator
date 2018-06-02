@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>TMB Calculator</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" media="screen" href="main_css.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css">
+      <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+
+  </head>
+  <body>
+    <div class="row main-container center-xs middle-xs">
+      <div class="box">
+        <div class="heading pacifico animated fadeIn heading-animation col-xs-8 col-sm-12 col-md-12">
+          <header>
+            <h1>Calculadora de Tasa Metabolica Basal</h1>
+          </header>
+        </div>
+        <div class="texting animated fadeInUp texting-animation  lato col-xs-8 col-sm-12 col-md-12">
+          <h3>Esta Calculadora esta hecha para ofrecer el consumo calorico aproximado
+          de un individuo <br><strong class="alert">ATENCIÓN:Estos son datos aproximados.</strong></h3>
+        </div>
+        <div class="calculator lato animated fadeInUp texting-animation col-xs-8 col-sm-12 col-md-12">
+          <section class="floating">
+            <h4>Rellene los siguientes datos para poder hacer los calculos:</h4>
+              <section>
+                <p>Sexo:
+                  <input id="checked" onclick="mujer()" type="radio" name="sex">Mujer
+                  <input onclick="hombre()" type="radio" name="sex">Hombre
+                </p>
+              </section>
+              <section>
+                <p>Peso:
+                  <input class="inputs" id="peso" type="number" name="weight">
+                  <input id="checked2" onclick="kilos()" type="radio" name="tw">Kilos
+                  <input onclick="libras()" type="radio" name="tw">Libras
+                </p>
+              </section>
+              <section>
+                <p class="height">Estatura:
+                  <input class="inputs " id="height" type="number"> CM
+                </p>
+              </section>
+              <section>
+                <p class="age">Edad:
+                  <input class="inputs" id="age" type="number"> Años
+                </p>
+              </section>
+              <section>
+                <p class="act">Actividad:
+                  <select id="activity" class="select" name="act">
+                    <option value="1.2">Sedentario</option>
+                    <option value="1.375">Act. Ligera</option>
+                    <option value="1.55">Act. Moderada</option>
+                    <option value="1.725">Act. Intensa</option>
+                    <option value="1.9">Act. Muy Intensa</option>
+                  </select>
+                </p>
+              </section>
+            <section>
+              <button class="btn" onclick="calculate()" type="button" name="calculate">Calcular</button>
+              <button class="btn" onclick="clean()" type="button" name="button">Limpiar</button>
+            </section>
+            <section>
+              <p id="tmb"></p>
+              <p id="main"></p>
+              <p id="loss"></p>
+              <p id="gain"></p>
+            </section>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="developer lato col-xs-12 col-sm-12 col-md-12">
+        <div class="box">
+          <p class="developer">Developer Info: <a href="https://github.com/JR-Factor">&copy;JR-Factor</a></p>
+        </div>
+    </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
